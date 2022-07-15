@@ -20,16 +20,18 @@ public class Runner {
         camry.isCruisecontrolIsOn();
         camry.cruisecontrolOn();
         camry.getUsb().musicOn();
-//        camry.getFuelAmount();
+        camry.setFuelAmount(10);
         camry.start();
         camry.stop();
 
         solara.getMiniFridge().fridge();
         solara.headlightsOn();
+        solara.setFuelAmount(10);
         solara.start();
         solara.stop();
 
         hiance.getBackupWheel();
+        hiance.setFuelAmount(12);
         hiance.start();
 
         dyna.getSocet220v().chargePhone();

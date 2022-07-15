@@ -50,6 +50,9 @@ public abstract class Vehicle {
             System.out.println("Остановились");
         }
     }
+    public void setFuelAmount(int amount) {
+        fuelTank.setFuelAmount(amount);
+    }
 
     public void headlightsOn() {
         System.out.println("фары вкл.");
