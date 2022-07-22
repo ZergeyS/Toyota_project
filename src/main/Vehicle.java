@@ -3,6 +3,8 @@ package main;
 import main.Components.*;
 
 public abstract class Vehicle {
+
+//    private FactoryCountries factoryCountry;
     private String color;
     private int maxSpeed;
     private Gearboxes gearbox;
