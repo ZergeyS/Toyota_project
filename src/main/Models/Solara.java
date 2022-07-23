@@ -3,6 +3,8 @@ package main.Models;
 import main.Components.*;
 import main.VehiclesTypes.Cabrio;
 
+import java.util.Arrays;
+
 public class Solara extends Cabrio {
     private MiniFridge miniFridge;
 
@@ -15,5 +17,21 @@ public class Solara extends Cabrio {
 
     public MiniFridge getMiniFridge() {
         return miniFridge;
+    }
+
+    @Override
+    public String toString() {
+        return "Solara{" +
+                "color='" + color + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", gearbox=" + gearbox +
+                ", isMoved=" + isMoved +
+                ", price=" + price +
+                ", engine=" + engine +
+                ", electrics=" + electrics +
+                ", headlights=" + headlights +
+                ", fuelTank=" + fuelTank +
+                ", wheels=" + Arrays.toString(wheels) +
+                '}';
     }
 }

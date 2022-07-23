@@ -3,6 +3,8 @@ package main.Models;
 import main.Components.*;
 import main.VehiclesTypes.Truck;
 
+import java.util.Arrays;
+
 public class Dyna extends Truck {
     private Socet220v socet220v;
 
@@ -15,5 +17,21 @@ public class Dyna extends Truck {
 
     public Socet220v getSocet220v() {
         return socet220v;
+    }
+
+    @Override
+    public String toString() {
+        return "Dyna{" +
+                "color='" + color + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", gearbox=" + gearbox +
+                ", isMoved=" + isMoved +
+                ", price=" + price +
+                ", engine=" + engine +
+                ", electrics=" + electrics +
+                ", headlights=" + headlights +
+                ", fuelTank=" + fuelTank +
+                ", wheels=" + Arrays.toString(wheels) +
+                '}';
     }
 }

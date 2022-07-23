@@ -3,6 +3,8 @@ package main.Models;
 import main.Components.*;
 import main.VehiclesTypes.Car;
 
+import java.util.Arrays;
+
 public class Camry extends Car {
     public Usb usb;
 
@@ -15,5 +17,21 @@ public class Camry extends Car {
 
     public Usb getUsb() {
         return usb;
+    }
+
+    @Override
+    public String toString() {
+        return "Camry{" +
+                "color='" + color + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", gearbox=" + gearbox +
+                ", isMoved=" + isMoved +
+                ", price=" + price +
+                ", engine=" + engine +
+                ", electrics=" + electrics +
+                ", headlights=" + headlights +
+                ", fuelTank=" + fuelTank +
+                ", wheels=" + Arrays.toString(wheels) +
+                '}';
     }
 }

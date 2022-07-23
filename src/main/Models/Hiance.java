@@ -3,6 +3,8 @@ package main.Models;
 import main.Components.*;
 import main.VehiclesTypes.Truck;
 
+import java.util.Arrays;
+
 public class Hiance extends Truck {
     private Wheel backupWheel;
 
@@ -16,5 +18,21 @@ public class Hiance extends Truck {
     public Wheel getBackupWheel() {
         System.out.println("запаска на месте");
         return backupWheel;
+    }
+
+    @Override
+    public String toString() {
+        return "Hiance{" +
+                "color='" + color + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", gearbox=" + gearbox +
+                ", isMoved=" + isMoved +
+                ", price=" + price +
+                ", engine=" + engine +
+                ", electrics=" + electrics +
+                ", headlights=" + headlights +
+                ", fuelTank=" + fuelTank +
+                ", wheels=" + Arrays.toString(wheels) +
+                '}';
     }
 }

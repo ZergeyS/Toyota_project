@@ -5,17 +5,17 @@ import main.Components.*;
 public abstract class Vehicle {
 
 //    private FactoryCountries factoryCountry;
-    private String color;
-    private int maxSpeed;
-    private Gearboxes gearbox;
-    private boolean isMoved;
-    private double price;
+    protected String color;
+    protected int maxSpeed;
+    protected Gearboxes gearbox;
+    protected boolean isMoved;
+    protected double price;
 
-    private Engine engine;
-    private Electrics electrics;
-    private Headlights headlights;
-    private FuelTank fuelTank;
-    private Wheel[] wheels;
+    protected Engine engine;
+    protected Electrics electrics;
+    protected Headlights headlights;
+    protected FuelTank fuelTank;
+    protected Wheel[] wheels;
 
     public Vehicle(String color, int maxSpeed, Gearboxes gearbox, boolean isMoved, double price,
                    Engine engine, Electrics electrics, Headlights headlights, FuelTank fuelTank, Wheel[] wheels) {

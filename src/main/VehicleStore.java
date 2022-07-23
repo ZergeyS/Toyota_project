@@ -8,13 +8,13 @@ import main.Models.Solara;
 public class VehicleStore {
 
     private int totalVehicleAmount = 0;
-    private int totalFreeSpace = 5;
+    private int totalFreeSpace = 1000;
 
     private int amountCamry = 0;
     private int amountSolara = 0;
     private int amountHiance = 0;
     private int amountDyna = 0;
-    private Vehicle[] storage = new Vehicle[totalFreeSpace];
+    private Vehicle[] storage = new Vehicle[this.totalFreeSpace];
 
     public int getTotalVehicleAmount() {
         return totalVehicleAmount;
@@ -71,7 +71,7 @@ public class VehicleStore {
 
         for (int j = 0; j < storage.length; j++) {
             if (storage[j] == vehicle) {
-                System.out.println("Со склада забрали " + storage[j]);
+                System.out.println("Со склада забрали " + storage[j].toString());
                 if (storage[j] instanceof Camry) {
                     amountCamry -= 1;
                 } else if (storage[j] instanceof Solara) {
